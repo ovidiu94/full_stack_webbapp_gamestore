@@ -11,11 +11,12 @@ const gamesRoute = require('./routes/gamesRoute')
 const userRoute = require('./routes/userRoute')
 const ordersRoute = require('./routes/ordersRoute')
 
+
 app.use('/api/games/', gamesRoute);
 app.use('/api/users/', userRoute);
 app.use('/api/orders/', ordersRoute);
 
-
+const __dirname = path.resolve()
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname,'/frontend/build')))
   
