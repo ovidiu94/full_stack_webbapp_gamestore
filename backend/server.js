@@ -6,7 +6,6 @@ const port =process.env.PORT || 8000;
 const app = express();
 const db = require('../backend/db.js')
 app.use(express.json());
-require('dotenv').config()
 const path = require('path');
 const gamesRoute = require('../backend/routes/gamesRoute.js')
 const userRoute = require('../backend/routes/userRoute.js')
