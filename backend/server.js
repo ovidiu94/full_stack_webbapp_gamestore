@@ -13,9 +13,6 @@ const userRoute = require('../backend/routes/userRoute.js')
 const ordersRoute = require('../backend/routes/ordersRoute.js')
 
 
-app.use('/api/games/', gamesRoute);
-app.use('/api/users/', userRoute);
-app.use('/api/orders/', ordersRoute);
 
 
 if(process.env.NODE_ENV ==='production')
@@ -29,6 +26,9 @@ if(process.env.NODE_ENV ==='production')
     })
 }
 
+app.use('/api/games/', gamesRoute);
+app.use('/api/users/', userRoute);
+app.use('/api/orders/', ordersRoute);
 
 
 
