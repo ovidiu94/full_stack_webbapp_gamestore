@@ -15,13 +15,16 @@ app.use('/api/games/', gamesRoute);
 app.use('/api/users/', userRoute);
 app.use('/api/orders/', ordersRoute);
 
-
+const __dirname = path.resolve()
 // serve static assets in production
-if (process.env.NODE.ENV === "production") {
-    app.use(express.static("frontend/build"));
-    app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html", "favicon.ico"));
-    });
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname,'/frontend/build')))
+    //anythin what is not /api routes
+    app.get('*', (req,res) => res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html')))
+    }else {
+    // routes
+    app.get('/', (req,res) => {
+    res.send ('Api is running')})
     }
    
     const port =process.env.PORT || 8000;
