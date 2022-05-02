@@ -4,12 +4,12 @@ const Game = require('./models/gameModel')
 
 
 const app = express();
-const db = require('../backend/db.js')
+const db = require('./db')
 app.use(express.json());
 const path = require('path');
-const gamesRoute = require('../backend/routes/gamesRoute.js')
-const userRoute = require('../backend/routes/userRoute.js')
-const ordersRoute = require('../backend/routes/ordersRoute.js')
+const gamesRoute = require('./routes/gamesRoute')
+const userRoute = require('./routes/userRoute')
+const ordersRoute = require('./routes/ordersRoute')
 
 app.use('/api/games/', gamesRoute);
 app.use('/api/users/', userRoute);
