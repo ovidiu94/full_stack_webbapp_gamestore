@@ -14,6 +14,7 @@ import Loginpage from "./pages/Loginpage";
 import Orderspage from "./pages/Orderspage";
 import Adminpage from "./pages/Adminpage";
 
+require("dotenv").config();
 function App() {
   return (
     <div className="App">
