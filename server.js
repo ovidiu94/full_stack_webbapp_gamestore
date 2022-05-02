@@ -4,7 +4,7 @@ const Game = require('./models/gameModel')
 
 
 const app = express();
-const db = require('./db.js')
+const db = require('./db')
 app.use(express.json());
 
 const path = require('path');
