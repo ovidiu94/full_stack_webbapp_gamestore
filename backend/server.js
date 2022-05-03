@@ -5,12 +5,12 @@ const Game = require('./models/gameModel')
 
 const app = express();
 const db = require('./db')
-app.use(express.json());
+
 const path = require('path');
 const gamesRoute = require('./routes/gamesRoute')
 const userRoute = require('./routes/userRoute')
 const ordersRoute = require('./routes/ordersRoute')
-
+app.use(express.json());
 
 app.use('/api/games/', gamesRoute);
 app.use('/api/users/', userRoute);
