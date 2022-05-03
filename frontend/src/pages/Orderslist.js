@@ -9,7 +9,7 @@ export default function Orderslist() {
   const { loading, error, orders } = getordersstate;
   useEffect(() => {
     dispatch(getAllOrders());
-  }, [dispatch]);
+  }, []);
   return (
     <div>
       {loading && <Loading />}

@@ -15,7 +15,7 @@ export default function Loginpage() {
       if(localStorage.getItem('currentUser')){
         window.location.href='/'
       }
-  }, [dispatch]);
+  }, []);
 
   function login() {
     const user = { email, password };

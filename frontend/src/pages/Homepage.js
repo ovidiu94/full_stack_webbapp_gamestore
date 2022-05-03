@@ -13,7 +13,7 @@ export default function Homepage() {
 
   useEffect(() => {
     dispatch(getAllGames());
-  }, [dispatch]);
+  }, []);
   return (
     <div>
     <Filter/>

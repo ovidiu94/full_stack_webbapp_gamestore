@@ -11,7 +11,7 @@ export default function Gameslist() {
   const { games, error, loading } = gamesstate;
   useEffect(() => {
     dispatch(getAllGames());
-  }, [dispatch]);
+  }, []);
   return (
     <div>
       <h2>Games List</h2>

@@ -16,7 +16,7 @@ export default function Adminpage() {
     if (!currentUser.isAdmin) {
       window.location.href = "/";
     }
-  }, [dispatch]);
+  }, []);
   return (
     <div>
       <div className="row justify-content-center">
