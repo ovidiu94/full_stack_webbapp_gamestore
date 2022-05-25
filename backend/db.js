@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 var mongoURL='mongodb+srv://admin:admin12345@gamestore.xhnru.mongodb.net/game-store'
 
-mongoose.connect(mongoURL, {useUnifiedTopology: true, useNewUrlParser: true})
+mongoose.connect(mongoURL, {useUnifiedTopology: true, useNewUrlParser: true,})
 
 
 

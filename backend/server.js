@@ -1,5 +1,5 @@
 const express = require("express");
-
+var bodyparser = require('body-parser');
 
 const Game = require("./models/gameModel");
 
@@ -15,6 +15,7 @@ app.use(express.json());
 app.use("/api/games/", gamesRoute);
 app.use("/api/users/", userRoute);
 app.use("/api/orders/", ordersRoute);
+app.use("/auth", userRoute);
 
  __dirname = path.resolve()
 if(process.env.NODE_ENV === 'production') {
