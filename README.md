@@ -2,7 +2,10 @@
 
 ![GameStore](https://res.cloudinary.com/dv2idmnj5/image/upload/v1653757022/GameStore/GoldenGames_app_uwwbhp.png)
 
-<p>This web application was created with MERN Stack
+This web application was created with MERN Stack<br>
+The project files can be found in the master branche not main
+
+<br>
 
 **MERN Stack**: MERN Stack is a Javascript Stack that is used for easier and faster deployment of full-stack web applications. MERN Stack comprises of 4 technologies namely: 
 - **MongoDB**, 
@@ -16,7 +19,7 @@ Each of these 4 powerful technologies provide an end-to-end framework to work in
 
 **Getting started**: Ensure that Node.js is installed in the local machine (an earlier version than 18 for example, 12.19.0 (including npm 7.4.3 or later version)) before downloading and launching the full stack web application.
 Download the Node.js source code or a pre-built installer for your platform from here
-**[Nodejs](https://nodejs.org/en/download/)**.</p>
+**[Nodejs](https://nodejs.org/en/download/)**.
 
 <br>
 
@@ -70,7 +73,7 @@ var mongoURL='mongodb+srv://admin:admin12345@gamestore.xhnru.mongodb.net/game-st
 
 <br><br>
 
-## To run the web aplication in development mode 
+## To run the web application in development mode 
 
 <br>
 
@@ -97,7 +100,7 @@ Scripts in package.json for main root are in the fallowing screenshot:<br><br>
 
 <br><br>
 
-## To run the web aplication in production mode 
+## To run the web application in production mode 
 
 <br>
 
