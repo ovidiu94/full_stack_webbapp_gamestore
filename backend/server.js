@@ -17,6 +17,7 @@ app.use("/api/users/", userRoute);
 app.use("/api/orders/", ordersRoute);
 app.use("/auth", userRoute);
 
+//used only in production mode
  __dirname = path.resolve()
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname,'/frontend/build')))
@@ -28,6 +29,17 @@ if(process.env.NODE_ENV === 'production') {
     res.send ('Api is running')})
     }
 
+// app.get("/getgames", (req, res) => {
+//     Game.find({}, (err , docs)=>{
+        
+//         if(err){
+//             console.log(err);
+//         }
+//         else{
+//             res.send(docs)
+//         }
+//     })
+// })
 
 const port = process.env.PORT || 8000;
 
